@@ -1,13 +1,6 @@
 <div align="center">
-<img src="https://www.google.com/search?q=https://raw.githubusercontent.com/lucide-react/lucide/main/icons/stethoscope.svg" width="80" height="80" alt="Logo Klinik" />
 <h1>Sistem Reservasi & Manajemen Klinik Gigi</h1>
 <p><strong>Digitalisasi Layanan Kesehatan Gigi yang Modern, Efisien, dan Terintegrasi</strong></p>
-
-<div>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Laravel-11-FF2D20%3Fstyle%3Dfor-the-badge%26logo%3Dlaravel%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC%3Fstyle%3Dfor-the-badge%26logo%3Dtailwind-css%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/MySQL-Database-4479A1%3Fstyle%3Dfor-the-badge%26logo%3Dmysql%26logoColor%3Dwhite" />
-</div>
 </div>
 
 <br />
@@ -45,59 +38,59 @@ Proyek ini adalah solusi manajemen digital untuk klinik gigi (seperti drgputri) 
 
 Sistem ini dibangun menggunakan kombinasi teknologi modern:
 
-Backend: Laravel 11 (PHP 8.2+)
-
-Frontend: Blade Templating & Tailwind CSS
-
-Interaktivitas: Alpine.js (Lightweight JavaScript)
-
-Integrasi: WhatsApp Gateway via Fonnte Service
-
-Tools: Laragon / XAMPP, Composer, NPM
+    Backend: Laravel 11 (PHP 8.2+)
+    
+    Frontend: Blade Templating & Tailwind CSS
+    
+    Interaktivitas: Alpine.js (Lightweight JavaScript)
+    
+    Integrasi: WhatsApp Gateway via Fonnte Service
+    
+    Tools: Laragon / XAMPP, Composer, NPM
 
 🚀 Panduan Instalasi
 
 Ikuti langkah-langkah di bawah ini untuk menjalankan project di lingkungan lokal:
 
-Clone Repository
+### Clone Repository
 
-git clone [https://github.com/username-kamu/drgputri.git](https://github.com/username-kamu/drgputri.git)
-
-
-Instal Dependensi
-
-composer install
-npm install && npm run build
+    git clone [https://github.com/username-kamu/drgputri.git](https://github.com/username-kamu/drgputri.git)
 
 
-Konfigurasi Database
+### Instal Dependensi
 
-Buat database baru di MySQL (contoh: db_klinik_gigi).
-
-Salin file .env.example menjadi .env.
-
-Update DB_DATABASE, DB_USERNAME, dan DB_PASSWORD di .env.
-
-Generate Key & Migrasi
-
-php artisan key:generate
-php artisan migrate --seed
+    composer install
+    npm install && npm run build
 
 
-Jalankan Aplikasi
+### Konfigurasi Database
 
-php artisan serve
+    Buat database baru di MySQL (contoh: db_klinik_gigi).
+    
+    Salin file .env.example menjadi .env.
+    
+    Update DB_DATABASE, DB_USERNAME, dan DB_PASSWORD di .env.
+
+### Generate Key & Migrasi
+
+    php artisan key:generate
+    php artisan migrate --seed
+
+
+### Jalankan Aplikasi
+
+    php artisan serve
 
 
 📂 Struktur Folder Utama
 
-app/Services/FonnteService.php: Logika pengiriman pesan WhatsApp.
-
-resources/views/UI/: Halaman depan (User Interface) untuk pasien.
-
-resources/views/rekam_medis/: Modul pengelolaan data medis pasien.
-
-app/Helpers/NotifikasiHelper.php: Helper untuk format pesan notifikasi.
+    app/Services/FonnteService.php: Logika pengiriman pesan WhatsApp.
+    
+    resources/views/UI/: Halaman depan (User Interface) untuk pasien.
+    
+    resources/views/rekam_medis/: Modul pengelolaan data medis pasien.
+    
+    app/Helpers/NotifikasiHelper.php: Helper untuk format pesan notifikasi.
 
 <hr />
 
